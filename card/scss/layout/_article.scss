@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    background-color: #333;
+}
+
+.container {
+    position: relative;
+    width: 420px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    
+    .video {
+        position: absolute;
+        right: -420px;
+        top: 0;
+        z-index: 999;
+        width: 420px;
+        height: 600px;
+        background-color: #f2f2f2;
+        transition: 1s;
+
+    .close {
+        position: absolute;
+        z-index: 999;
+        right: 10px;
+        top: 10px;
+        list-style-type: none;
+        color: #fff;
+        display: block;
+        // border: 1px solid #fff;
+        // border-radius: 250px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        transition: .1s;
+        cursor: pointer;
+        font-family: verdana;
+        text-decoration: none;
+        transition: 1s ease;
+        animation-timing-function: linear;
+        
+
+        &:hover {
+           color: rgb(252, 4, 4);
+           border-color: rgb(252, 4, 4);
+           transform: scale(1.2); 
+        }
+    }
+
+     
+
+   
+            
+}
+
+    .article {
+        width: 420px;
+        height: auto;
+        padding-bottom: 20px;
+        background-color: $background;
+        position: relative;
+        box-shadow: 3px 02px 5px #000;
+        margin-top: 300px;
+
+        &__:hover {
+            box-shadow: 2px 3px 5px rgb(253, 253, 253);
+        }
+
+        &__image {
+            max-width: 100%;
+        }
+
+        &__title {
+            font-family: impact;
+            font-weight: bold;
+            margin-left: 21px;
+        }
+
+        &__info {
+             font-family: 'Raleway',
+             sans-serif;
+             width: 90%;
+             margin: auto;
+             color: #aca7a7;
+        }
+
+        .icon-video {
+            position: relative;
+            right: -376px;
+            top: -179px;
+            color: rgb(252, 4, 4);
+            transition: 1s;
+        }
+
+         .icon-video:hover {
+             color: #000;
+         }
+
+        .jdi {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 3em;
+            text-align: center;
+            
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .control {
+            padding: 20px;
+        }
+
+        .fa-play, .fa-pause {
+            position: relative;
+            right: 0;
+            top: 10px;
+            color: rgb(252, 4, 4);
+            border: 1px solid #c0bdbd;
+            padding: 10px;
+            transition: 1s;
+        }
+
+        
+
+        .fa-play:hover,
+        .fa-pause:hover {
+            color: #000;
+        }
+
+    }
+}
+
+
+
+ 
